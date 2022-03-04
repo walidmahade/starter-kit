@@ -1,3 +1,13 @@
 .main-bg {
-    background-image: url('assets/images/bg.png');
+    /* background-color: lavender; */
+    width: 100vw;
+    height: 100vh;
+    /* display: grid; */
+    @mixin atMedium {
+        background-color: transparent;
+        /* background-image: url("assets/images/background.png"); */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 }
