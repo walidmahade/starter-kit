@@ -1,0 +1,27 @@
+.container {
+  overflow: hidden;
+  padding-left: 18px;
+  padding-right: 18px;
+  width: 100%;
+  margin: auto;
+  max-width: 320px;
+
+  @mixin atSmall {
+    max-width: 530px;
+  }
+
+  @mixin atMedium {
+    max-width: 768px;
+  }
+
+  @mixin atLarge {
+    max-width: 1236px;
+  }
+}
+
+.d-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}

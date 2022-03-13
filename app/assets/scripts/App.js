@@ -1,34 +1,30 @@
-import '../styles/styles.css'
-import 'lazysizes'
-import MobileMenu from './modules/MobileMenu'
-import RevealOnScroll from './modules/RevealOnScroll'
-import StickyHeader from './modules/StickyHeader'
+/**-------------------------------
+ * Import sass styles here
+ * It will be auto compilded into
+ * css in build step
+ */
+import "../styles/styles.scss";
 
-// new StickyHeader()
-// ADD the Exact classes name for revealing effects and percentages;
-// new RevealOnScroll(document.querySelectorAll(".add-class"), 75)
-// new RevealOnScroll(document.querySelectorAll(".add-class"), 60)
-// ADD the Exact classes name for revealing effects and percentages;
-new MobileMenu();
-// let modal
+/**-------------------------------
+ * Uncomment the following lines
+ * to use jQuery.
+ */
+// import $ from "jquery";
 
-// document.querySelectorAll(".open-modal").forEach(el => {
-//     el.addEventListener("click", e => {
-//         e.preventDefault()
-//         if (typeof modal == "undefined") {
-//             import ( /* webpackChunkName: "modal" */ './modules/Modal').then(x => {
-//                 modal = new x.default()
-//                 setTimeout(() => modal.openTheModal(), 20)
-//             }).catch(() => console.log("There was a problem."))
-//         } else {
-//             modal.openTheModal()
-//         }
-//     })
-// })
+/**-------------------------------
+ * Uncomment the following lines
+ * to enable lazy loading
+ * of images and videos.
+ */
+// import "lazysizes";
 
-if (module.hot) {
-    module.hot.accept()
-}
+/**-------------------------------
+ * import each js module/file here
+ */
+// import Header from "./modules/header";
+import "./modules/header";
 
-
-//Practice
+/**-------------------------------
+ * init each js module/file here
+ */
+// new Header();

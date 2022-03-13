@@ -1,0 +1,11 @@
+// General global styles
+@import "base/reset";
+@import "base/variables";
+@import "base/mixins";
+@import "base/global";
+
+// Reusable components styles
+@import "modules/layout";
+
+// Page specific styles
+@import "pages/home";
